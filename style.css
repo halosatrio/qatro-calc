@@ -1,17 +1,19 @@
-#container{
-	width: 1000px;
-	height: 550px;
-	margin: 20px auto;	
+*{
+  font-family: sans-serif;
+}
+body{
+  height:100%;
 }
 #calculator{
+  padding: 10px 10px;
 	width: 320px;
 	height: 520px;
 	background-color: #eaedef;
 	margin: 0 auto;
 	top: 20px;
 	position: relative;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border: 2px solid black ;
 }
 #result{
 	height: 120px;
@@ -33,7 +35,17 @@
 #keyboard{
 	height: 400px;
 }
-.operator, .number, .empty{
+#equal{
+  height: 60px;
+  width: 220px;
+  border-radius: 6px 6px 6px 6px;
+}
+#clear{
+  height: 60px;
+  width: 140px;
+  border-radius: 6px 6px 6px 6px;
+}
+.operator, .number, .point{
 	width: 60px;
 	height: 60px;
 	margin: 10px;
@@ -43,7 +55,7 @@
 	font-weight: bold;
 	font-size: 15px;
 }
-.number, .empty{
+.number, .point{
 	background-color: white;
 }
 .number, .operator{
@@ -55,23 +67,9 @@
 .operator:focus, .number:focus, .empty:focus{
 	outline: 0;
 }
-button:nth-child(4){
-	font-size: 20px;
-	background-color: #20b2aa;
+.operator{
+  background-color: cornflowerblue;
 }
-button:nth-child(8){
-	font-size: 20px;
-	background-color: #ffa500;
-}
-button:nth-child(12){
-	font-size: 20px;
-	background-color: #f08080;
-}
-button:nth-child(16){
-	font-size: 20px;
-	background-color: #7d93e0;
-}
-button:nth-child(20){
-	font-size: 20px;
-	background-color: #9477af;
+#clear, #backspace, #equal {
+  background-color: burlywood;
 }
